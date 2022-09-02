@@ -11,7 +11,7 @@ from Aplikacja_Alicji.models import Project
 def project_index(request):
     Aplikacja_Alicji = Project.objects.all()
     context = {
-        'Aplikacja_Alicji': Aplikacja_Alicji
+        'projects': Aplikacja_Alicji
     }
     return render(request, 'project_index.html', context)
 
